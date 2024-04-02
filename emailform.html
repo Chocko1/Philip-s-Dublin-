@@ -83,7 +83,7 @@
       border: 2px solid #f00;
       border-radius: 5px;
       background-color: #222;
-      color:rgba(255, 215, 0, 0.7); ; /* Faded gold color */
+      color: rgba(255, 215, 0, 0.7); /* Faded gold color */
     }
     .contact-form input[type="submit"] {
       width: auto;
@@ -91,7 +91,7 @@
       margin-top: 10px;
       border: none;
       background-color: #f00;
-      color:rgba(255, 215, 0, 0.7); ;
+      color: rgba(255, 215, 0, 0.7);
       cursor: pointer;
     }
     /* Thank you message */
@@ -104,7 +104,7 @@
       display: none; /* Initially hidden */
     }
     .thank-you h2, .thank-you p {
-      color: rgba(255, 215, 0, 0.7);; /* Faded gold color */
+      color: rgba(255, 215, 0, 0.7); /* Faded gold color */
     }
   </style>
 </head>
@@ -128,7 +128,8 @@
       <!-- Contact form -->
       <div class="contact-form">
         <h2>Contact Us</h2>
-        <form id="contactForm">
+        <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contactForm">
           <label for="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName" required>
           <label for="lastName">Last Name:</label>
@@ -170,4 +171,3 @@
   </script>
 </body>
 </html>
-
