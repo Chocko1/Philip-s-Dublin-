@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Phil Lynott Dublin Tour</title>
+  <!-- CSS Styles -->
+  <style>
+    /* General styling */
+    body {
+      font-family: 'Crimson Text', serif;
+      background-color: #000;
+      color: rgba(255, 215, 0, 0.7);
+      margin: 0;
+      padding: 0;
+    }
+    /* Header styling */
+    header {
+      background-image: url('https://i.imgur.com/GIB264Z.png');
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      position: relative;
+      border: 4px solid #f00;
+      border-radius: 5px;
+      display: flex;
+      justify-content: flex-end; /* Move nav to the right */
+      align-items: flex-end; /* Align nav to the bottom */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    /* Navigation styling */
+    nav {
+      display: flex;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: rgba(255, 215, 0, 0.7);/* Faded gold color */
+      text-decoration: none;
+    }
+    /* Main content styling */
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .column {
+      width: calc(50% - 20px); /* Adjusted width for two columns with margin */
+      margin-bottom: 20px;
+      border: 4px solid #f00;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .column img {
+      width: 100%; /* Make images fill the container */
+      height: auto;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .content {
+      padding: 10px;
+    }
+    .section-heading {
+      color: rgba(255, 215, 0, 0.7);
+      text-align: center; /* Center the heading */
+      margin-top: 0; /* Remove default margin */
+    }
+    .read-more, .read-less {
+      color: rgba(255, 215, 0, 0.7);
+      cursor: pointer;
+    }
+    .full-text {
+      white-space: normal;
+      display: none;
+    }
+    /* Responsive styling */
+    @media screen and (max-width: 768px) {
+      .column {
+        width: 100%; /* Full width on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+      <ul>
+        <!-- Navigation links -->
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\aboutphilip.html">About</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\placestotour.html">Places</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\contactus.html">Contact</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Column 1 -->
+    <section class="column column1">
+      <!-- Section heading -->
+      <h2 class="section-heading">Crumlin</h2>
+      <!-- Quote -->
+      <h3 class="section-heading">"He is just a boy, that has lost his way".</h3> 
+      <!-- Image -->
+      <img src="https://i.imgur.com/TRlYCWa.jpg" alt="Crumlin">
+      <!-- Linked Image -->
+      <a href="https://i.imgur.com/GXceUDH.jpeg" target="_blank">
+        <img src="https://i.imgur.com/GXceUDH.jpeg" alt="Linked Image" style="width: 100%;">
+      </a>
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p> Step into the footsteps of a legend with our digital tour of Philip Lynott's Crumlin. Our immersive experience will digitally guide you from Lynott's childhood home on Leghlin Road to the very schools where he first honed his musical talents. Explore the fields where he played football and discover the vibrant murals that pay tribute to his legacy. By downloading this tour, you're not only immersing yourself in Lynott's story but also contributing to the preservation of the murals that celebrate his life.</p>
+        <!-- Read more -->
+        <p class="full-text">This tour is a must for anyone captivated by the journey of a young boy who defied the odds. Delve into the heart of Crumlin and uncover the stories of other working-class heroes who, like Philip, left an indelible mark on the world. Join us on this unforgettable journey and gain insight into the life and times of one of Ireland's most iconic musicians.</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">Read More</a>
+      </div>
+    </section>
+    <!-- Column 2 -->
+    <section class="column column2">
+      <!-- Section heading -->
+      <h2 class="section-heading">Dublin</h2>
+      <!-- Quote -->
+      <h3 class="section-heading">"How can I leave this town, that brings me down"</h3>
+      <!-- Image -->
+      <img src="https://i.imgur.com/ixjNfQg.png" alt="Dublin">
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p> Embark on an extraordinary journey through the heart of Dublin with our digital tour dedicated to the iconic Philip Lynott. As his fame soared on the international stage, Lynott remained deeply connected to his beloved city, Dublin, where he found endless inspiration and solace. Our tour unveils the hidden gems and storied locations that shaped Lynott's life and legacy, offering a captivating glimpse into the soul of the city.</p>
+        <!-- Read more -->
+        <p class="full-text">Join us on this immersive journey and uncover the footprints of a legend imprinted across Dublin's landscape. With each step, you'll delve deeper into Lynott's world, gaining a newfound appreciation for the man behind the music. Don't miss your chance to experience this captivating tour—an absolute must-download for every fan eager to unravel the mysteries of Dublin's most cherished icon.</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">Read More</a>
+      </div>
+    </section>
+    <!-- Column 3 -->
+    <section class="column column3">
+      <!-- Section heading -->
+      <h2 class="section-heading">Sutton</h2>
+      <!-- Quote -->
+      <h3 class="section-heading">"If you see my Mother, will you tell her I am doing fine".</h3>
+      <!-- Image -->
+      <img src="https://i.imgur.com/Ys1mcYy.jpeg" alt="Sutton">
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p>Philip Lynott purchased his home, Gleen Corr, in Sutton, Dublin, in the mid-1970s, cementing his ties to the picturesque coastal suburb. This period coincided with Lynott's rising prominence as a musician and songwriter, with Thin Lizzy achieving international success. Sutton provided Lynott with a serene backdrop for his creative endeavors, offering respite from the demands of his burgeoning career. Gleen Corr, nestled near the iconic Corr Castle, became synonymous with Lynott's legacy, serving as a hub for musical innovation and camaraderie. Its significance as the gatehouse to Corr Castle adds to its historical allure.</p>
+        <!-- Read more -->
+        <p class="full-text">Philip Lynott purchased his home, Gleen Corr, in Sutton, Dublin, in the mid-1970s, cementing his ties to the picturesque coastal suburb. This period coincided with Lynott's rising prominence as a musician and songwriter, with Thin Lizzy achieving international success. Sutton provided Lynott with a serene backdrop for his creative endeavors, offering respite from the demands of his burgeoning career. Gleen Corr, nestled near the iconic Corr Castle, became synonymous with Lynott's legacy, serving as a hub for musical innovation and camaraderie. Its significance as the gatehouse to Corr Castle adds to its historical allure.</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">Read More</a>
+      </div>
+    </section>
+    <!-- Column 4 -->
+    <section class="column column4">
+      <!-- Section heading -->
+      <h2 class="section-heading">Whats on</h2>
+       <h3 class="section-heading">"You just never know"</h3>
+      <!-- Placeholder image -->
+      <img src="https://images.unsplash.com/photo-1598386867671-2f46bd1f68b4?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder">
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p>Events to be linked here to show what is on and when</p>
+        <!-- Read more -->
+        <p class="full-text">This section will be updated soon with an image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum urna et nisi varius, id sollicitudin enim finibus. Donec posuere, erat et lacinia condimentum, nisi orci malesuada enim, id tincidunt justo magna et dolor.</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">Read More</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Copyright notice -->
+    <p>&copy; 2024 Phil Lynott Dublin Tour</p>
+  </footer>
+
+  <!-- JavaScript function for toggling text -->
+  <script>
+    function toggleText(link, className) {
+      var content = link.previousElementSibling;
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        link.innerHTML = 'Read Less';
+      } else {
+        content.style.display = 'none';
+        link.innerHTML = 'Read More';
+      }
+    }
+  </script>
+</body>
+</html>
+

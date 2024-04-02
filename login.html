@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #000;
+            color: rgba(255, 215, 0, 0.7); /* Faded gold color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 600px; /* Adjust the width as needed */
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .login-form {
+            width: 100%;
+            background-color: #111;
+            border: 4px solid #f00;
+            border-radius: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: rgba(255, 215, 0, 0.7); /* Faded gold color */
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #f00;
+            border-radius: 5px;
+            background-color: #222;
+            color: rgba(255, 215, 0, 0.7); /* Faded gold color */
+        }
+        .login-form input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: #f00;
+            color: rgba(255, 215, 0, 0.7); /* Faded gold color */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="#" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Feedback</title>
+  <!-- CSS Styles -->
+  <style>
+    /* General styling */
+    body {
+      font-family: 'Crimson Text', serif;
+      background-color: #000;
+      color: rgba(255, 215, 0, 0.7);
+      margin: 0;
+      padding: 0;
+    }
+    /* Header styling */
+    header {
+      background-image: url('https://i.imgur.com/GIB264Z.png');
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      position: relative;
+      border: 4px solid #f00;
+      border-radius: 5px;
+      display: flex;
+      justify-content: flex-end; /* Move nav to the right */
+      align-items: flex-end; /* Align nav to the bottom */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    /* Navigation styling */
+    nav {
+      display: flex;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: rgba(255, 215, 0, 0.7);/* Faded gold color */
+      text-decoration: none;
+    }
+    /* Main content styling */
+    main {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .feedback-form {
+      width: 100%;
+      max-width: 600px; /* Adjust the width as needed */
+      background-color: #111;
+      border: 4px solid #f00;
+      border-radius: 5px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .feedback-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .feedback-form input[type="text"],
+    .feedback-form textarea {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #f00;
+      border-radius: 5px;
+      background-color: #222;
+      color: rgba(255, 215, 0, 0.7); /* Faded gold color */
+    }
+    .feedback-form input[type="submit"] {
+      width: auto;
+      padding: 10px 20px;
+      border: none;
+      background-color: #f00;
+      color: rgba(255, 215, 0, 0.7); /* Faded gold color */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+      <ul>
+        <!-- Navigation links -->
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\INDEX.HTML">Home</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\aboutphilip.html">About</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\placestotour.html">Places</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Feedback form -->
+    <div class="feedback-form">
+      <h2>Feedback</h2>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Copyright notice -->
+    <p>&copy; 2024 Phil Lynott Dublin Tour</p>
+  </footer>
+
+  <!-- JavaScript function for submitting the feedback form -->
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+      var formData = new FormData(this); // Get form data
+      // Here you can add your feedback submission logic using fetch or any other method
+      // For now, let's just display a confirmation message
+      alert("Thank you for your feedback!");
+      document.getElementById("feedbackForm").reset(); // Clear form fields
+    });
+  </script>
+</body>
+</html>
