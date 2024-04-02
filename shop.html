@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Phil Lynott Dublin Tour</title>
+  <!-- CSS Styles -->
+  <style>
+    /* General styling */
+    body {
+      font-family: 'Crimson Text', serif;
+      background-color: #000;
+      color: rgba(255, 215, 0, 0.7);
+      margin: 0;
+      padding: 0;
+    }
+    /* Header styling */
+    header {
+      background-image: url('https://i.imgur.com/GIB264Z.png');
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      position: relative;
+      border: 4px solid #f00;
+      border-radius: 5px;
+      display: flex;
+      justify-content: flex-end; /* Move nav to the right */
+      align-items: flex-end; /* Align nav to the bottom */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    /* Navigation styling */
+    nav {
+      display: flex;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: rgba(255, 215, 0, 0.7);/* Faded gold color */
+      text-decoration: none;
+    }
+    /* Main content styling */
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .column {
+      width: calc(50% - 20px); /* Adjusted width for two columns with margin */
+      margin-bottom: 20px;
+      border: 4px solid #f00;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .column img {
+      width: 100%; /* Make images fill the container */
+      height: auto;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .content {
+      padding: 10px;
+    }
+    .section-heading {
+      color: rgba(255, 215, 0, 0.7);
+      text-align: center; /* Center the heading */
+      margin-top: 0; /* Remove default margin */
+    }
+    .read-more, .read-less {
+      color: rgba(255, 215, 0, 0.7);
+      cursor: pointer;
+    }
+    .full-text {
+      white-space: normal;
+      display: none;
+    }
+    /* Responsive styling */
+    @media screen and (max-width: 768px) {
+      .column {
+        width: 100%; /* Full width on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+      <ul>
+        <!-- Navigation links -->
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\INDEX.HTML">Home</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\aboutphilip.html">About Philip</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\places.html">Tours</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\contactus.html">Contact</a></li>
+        <li><a href="C:\Users\westy\OneDrive\Documents\Philo App\feedback.html">Feedback</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Column 1 -->
+    <section class="column column1">
+      <!-- Section heading -->
+      <h2 class="section-heading">Tee Shirts/Clothing</h2>
+      <!-- Quote -->
+      <h3 class="section-heading">"Music that wears yors cloths".</h3> 
+      <!-- Image -->
+      <img src="###################" alt="########">
+      <!-- Linked Image -->
+      <a href="#############" target="_blank">
+        <img src="################" alt="Linked Image" style="width: 100%;">
+      </a>
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p> Our Clothing is made with top quality producers.</p>
+        <!-- Read more -->
+        <p class="full-text">xxxl, xxxxxxl, xxxxxxxxxl.</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">Shop Link </a>
+      </div>
+    </section>
+    <!-- Column 2 -->
+    <section class="column column2">
+      <!-- Section heading -->
+      <h2 class="section-heading">Mugs,Cups and a Pint Glass</h2>
+      <!-- Quote -->
+      <h3 class="section-heading">"The drinks are on us"</h3>
+      <!-- Image -->
+      <img src="###############" alt="##########">
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p> Have a cupp or a pint</p>
+        <!-- Read more -->
+        <p class="full-text">Join us on this immersive journey and uncover the footprints of a legend imprinted across Dublin's landscape. With each step, you'll delve deeper into Lynott's world, gaining a newfound appreciation for the man behind the music. Don't miss your chance to experience this captivating tour—an absolute must-download for every fan eager to unravel the mysteries of Dublin's most cherished icon.</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">Shop</a>
+      </div>
+    </section>
+    <!-- Column 3 -->
+    <section class="column column3">
+      <!-- Section heading -->
+      <h2 class="section-heading">Tech</h2>
+      <!-- Quote -->
+      <h3 class="section-heading">"Philip in the matrix".</h3>
+      <!-- Image -->
+      <img src="##############" alt="###########">
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p>Computing for the sake of computing</p>
+        <!-- Read more -->
+        <p class="full-text">Getr thetech out</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">Shop</a>
+      </div>
+    </section>
+    <!-- Column 4 -->
+    <section class="column column4">
+      <!-- Section heading -->
+      <h2 class="section-heading">Music inspired</h2>
+       <h3 class="section-heading">"Music was my first love"</h3>
+      <!-- Placeholder image -->
+      <img src="#################" alt="###########">
+      <!-- Content -->
+      <div class="content">
+        <!-- Introduction -->
+        <p>What can you sell here </p>
+        <!-- Read more -->
+        <p class="full-text">???????????????</p>
+        <!-- Read more button -->
+        <a href="#" class="read-more" onclick="toggleText(this, 'read-less'); return false;">shop</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Copyright notice -->
+    <p>&copy; 2024 Phil Lynott Dublin Tour</p>
+  </footer>
+
+  <!-- JavaScript function for toggling text -->
+  <script>
+    function toggleText(link, className) {
+      var content = link.previousElementSibling;
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        link.innerHTML = 'Read Less';
+      } else {
+        content.style.display = 'none';
+        link.innerHTML = 'Read More';
+      }
+    }
+  </script>
+</body>
+</html>
