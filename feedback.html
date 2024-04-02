@@ -45,7 +45,7 @@
       margin: 0 10px;
     }
     nav ul li a {
-      color: rgba(255, 215, 0, 0.7);/* Faded gold color */
+      color: rgba(255, 215, 0, 0.7); /* Faded gold color */
       text-decoration: none;
     }
     /* Main content styling */
@@ -68,6 +68,7 @@
     .feedback-form label {
       display: block;
       margin-bottom: 10px;
+      color: rgba(255, 215, 0, 0.7); /* Faded gold color */
     }
     .feedback-form input[type="text"],
     .feedback-form textarea {
@@ -109,7 +110,8 @@
     <!-- Feedback form -->
     <div class="feedback-form">
       <h2>Feedback</h2>
-      <form id="feedbackForm">
+      <form id="feedbackForm" name="feedbackForm" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="feedbackForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
@@ -140,3 +142,4 @@
   </script>
 </body>
 </html>
+
