@@ -188,26 +188,34 @@
 </section>
 
   </main>
+<!-- Footer section -->
+<footer>
+  <!-- Useful links -->
+  <div class="useful-links">
+    <ul>
+      <li><a href="https://www.example.com">Example</a></li>
+      <li><a href="https://www.anotherexample.com">Another Example</a></li>
+      <li><a href="https://www.yetanotherexample.com">Yet Another Example</a></li>
+      <li><a href="https://www.finalexample.com">Final Example</a></li>
+    </ul>
+  </div>
+  <!-- Copyright notice -->
+  <p>&copy; 2024 Phil Lynott Dublin Tour</p>
+</footer>
 
-  <!-- Footer section -->
-  <footer>
-    <!-- Copyright notice -->
-    <p>&copy; 2024 Phil Lynott Dublin Tour</p>
-  </footer>
-
-  <!-- JavaScript function for toggling text -->
-  <script>
-    function toggleText(link, className) {
-      var content = link.previousElementSibling;
-      if (content.style.display === 'none' || content.style.display === '') {
-        content.style.display = 'block';
-        link.innerHTML = 'Read Less';
-      } else {
-        content.style.display = 'none';
-        link.innerHTML = 'Read More';
-      }
+<!-- JavaScript function for toggling text -->
+<script>
+  function toggleText(link, className) {
+    var content = link.previousElementSibling;
+    if (content.style.display === 'none' || content.style.display === '') {
+      content.style.display = 'block';
+      link.innerHTML = 'Read Less';
+    } else {
+      content.style.display = 'none';
+      link.innerHTML = 'Read More';
     }
-  </script>
+  }
+</script>
 </body>
 </html>
 
