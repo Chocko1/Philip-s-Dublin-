@@ -116,8 +116,8 @@
       <ul>
         <!-- Home link -->
         <li><a href="INDEX.HTML">Home</a></li>
-        <li><a href="feedback.html">Feedback</a></li>  <!-- Updated href attribute -->
-        <li><a href="shop.html">Shop</a></li>  
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="shop.html">Shop</a></li>
       </ul>
     </nav>
   </header>
@@ -129,16 +129,24 @@
       <!-- Contact form -->
       <div class="contact-form">
         <h2>Contact Us</h2>
-        <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contactForm">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          
+          <!-- Honeypot field to prevent spam bots -->
+          <input type="hidden" name="bot-field">
+          
           <label for="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName" required>
+          
           <label for="lastName">Last Name:</label>
           <input type="text" id="lastName" name="lastName" required>
+          
           <label for="email">Email Address:</label>
           <input type="email" id="email" name="email" required>
+          
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
+          
           <input type="submit" value="Submit">
         </form>
       </div>
@@ -149,7 +157,7 @@
       <h2>Rockin On!</h2>
       <p>Thank you for your message. One of our staff will get back to you soon.</p>
       <!-- Linked image -->
-      <img src="C:\Users\westy\OneDrive\Documents\Philo App\Images\97fe7d485780e872c07c302f27b64e45.jpg" alt="Thank you image">
+      <img src="path/to/your/image.jpg" alt="Thank you image">
     </div>
   </main>
 
@@ -159,16 +167,22 @@
     <p>&copy; 2024 Phil Lynott Dublin Tour</p>
   </footer>
 
-  <!-- JavaScript function for submitting the form and clearing form fields -->
+  <!-- JavaScript function for displaying the thank you message -->
   <script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
+    document.querySelector("form[name='contact']").addEventListener("submit", function(event) {
       event.preventDefault(); // Prevent default form submission
+      
       var formData = new FormData(this); // Get form data
-      // Here you can add your email sending logic using fetch or any other method
-      // For now, let's just display a thank you message
-      document.getElementById("thankYouMessage").style.display = "block"; // Display thank you message
-      document.getElementById("contactForm").reset(); // Clear form fields
+
+      // Here you can add additional form processing logic if needed
+
+      // Show thank you message
+      document.getElementById("thankYouMessage").style.display = "block";
+      
+      // Clear form fields
+      this.reset();
     });
   </script>
 </body>
 </html>
+
